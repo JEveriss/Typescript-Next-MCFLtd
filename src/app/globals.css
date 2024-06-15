@@ -1,0 +1,96 @@
+:root {
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --primary-dark: #16233d;
+  --primary-light: #ffffe0;
+  --primary-accent: #c7dff9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 1200px;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  scrollbar-gutter: stable;
+}
+
+html {
+  margin: 0 auto;
+  font-size: 62.5%;
+  color: var(--primary-light);
+  background-color: var(--primary-dark);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
