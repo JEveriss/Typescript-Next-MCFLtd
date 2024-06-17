@@ -34,7 +34,7 @@
 }
 main {
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   margin: 0 auto;
   display: block;
 }
@@ -100,4 +100,6 @@ h6 {
 
 .global__title {
   letter-spacing: 0.4rem;
+  line-height: 1;
+  font-size: 4rem;
 }
