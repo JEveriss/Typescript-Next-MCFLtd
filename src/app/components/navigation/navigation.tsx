@@ -14,6 +14,10 @@ const links = [
 const Navigation = () => {
   return (
     <section className={styles.navigation__wrapper}>
+      <div className={styles.navigation__title}>
+        <h2>MATTHEW</h2>
+        <h2>COLLINS</h2>
+      </div>
       <ul className={styles.navigation__ul}>
         {links.map((link, i) => {
           return (
