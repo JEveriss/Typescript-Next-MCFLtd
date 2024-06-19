@@ -5,7 +5,6 @@ import Navigation from "./components/navigation/navigation";
 const Home = () => {
   return (
     <main>
-      <Navigation />
       <SwiperBanner/>
     </main>
   );
