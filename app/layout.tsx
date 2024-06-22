@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={copse.className}>
@@ -24,3 +24,4 @@ export default function RootLayout({
     </html>
   );
 }
+
