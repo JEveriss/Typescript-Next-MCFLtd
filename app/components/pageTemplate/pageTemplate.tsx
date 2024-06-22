@@ -10,7 +10,6 @@ type PageProps = {
 };
 
 const PageTemplate = (props: PageProps) => {
-    console.log(props)
   return (
     <section className={styles.page__Wrapper}>
       <div className={styles.page__LeftBlock}>
@@ -28,7 +27,6 @@ const PageTemplate = (props: PageProps) => {
           className={styles.page__Image}
           src={props?.mainImage}
           alt={props?.imageName}
-            // fill
         />
       </div>
     </section>

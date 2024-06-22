@@ -34,18 +34,19 @@
 }
 main {
   width: 100%;
-  padding: 0 2rem;
   margin: 0 auto;
   display: block;
 }
 
 body {
-  height: 100%;
+  margin: 0 3rem;
+  min-height: 100vh;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   display: flex;
   flex-direction: column;
-  scrollbar-gutter: stable;
+
+  /* scrollbar-gutter: stable; */
 }
 
 html {
