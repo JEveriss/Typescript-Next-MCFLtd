@@ -1,0 +1,16 @@
+TODOS
+
+Break Points
+navigation -
+    880px starts to break the flow
+        make font smaller
+page -
+    880px make title font and parag font smaller
+    660px column layout
+        left and right blocks to be width: 100%;
+
+
+
+PAGE WRAPPER - align-items: flex-start;
+SCROLL BAR  - hide when page scrolls
+

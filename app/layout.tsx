@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Copse } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/navigation/navigation";
+import Footer from "./components/footer/footer";
 
 const copse = Copse({ weight: "400", subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={copse.className}>
         <Navigation />
         {children}
+        <Footer/>
       </body>
     </html>
   );

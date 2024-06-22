@@ -4,7 +4,6 @@
 .page__LeftBlock,
 .page__RightBlock {
   width: 50%;
-  padding: 2rem;
 }
 .page__Title {
   font-size: 4rem;
@@ -26,4 +25,10 @@
   width: 100%;
   inset: 0px;
   object-fit: contain;
+}
+
+@media screen and (max-width: 660px) {
+  .page__Wrapper {
+    flex-direction: column;
+  }
 }

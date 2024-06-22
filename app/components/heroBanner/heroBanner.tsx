@@ -15,7 +15,6 @@ const data = [hero1, hero2, hero3];
 const HeroBanner = () => {
   return (
     <div className={styles.heroBanner__wrapper}>
-        {/* <SwiperBanner/> */}
       <Image
         src={hero1}
         alt="temp"
