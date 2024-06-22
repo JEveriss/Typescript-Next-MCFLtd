@@ -1,0 +1,20 @@
+.heroBanner__wrapper {
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+
+.heroBanner__text {
+  background-color: var(--primary-shade);
+  color: var(--primary-light);
+  font-size: 2.8rem;
+  left: 50%;
+  padding: 2rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+    z-index: 9;
+}
