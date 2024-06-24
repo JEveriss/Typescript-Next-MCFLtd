@@ -32,3 +32,17 @@
 .footer__RightBlock > * {
   margin-left: 2rem;
 }
+
+@media screen and (max-width: 460px) {
+  .footer__Wrapper {
+    flex-direction: column;
+  }
+  .footer__RightBlock {
+    justify-content: space-between;
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .footer__RightBlock > * {
+    margin: 0;
+  }
+}
