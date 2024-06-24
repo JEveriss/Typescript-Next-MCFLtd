@@ -1,5 +1,14 @@
 .page__Wrapper {
   display: flex;
+
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.page__Wrapper::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
 }
 .page__LeftBlock,
 .page__RightBlock {

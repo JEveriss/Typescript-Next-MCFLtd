@@ -1,11 +1,22 @@
-import styles from "./pages.module.css";
+import styles from "../pages.module.css";
 
-import React from "react";
+import PageTemplate from "../components/pageTemplate/pageTemplate";
 
-type Props = {};
+import {data} from "./data";
 
-const Workshop = (props: Props) => {
-  return <div>Workshop</div>;
+const workshopProps = data[0]
+
+const Workshop = () => {
+
+  return (
+    <section className={styles.page__Wrapper}>
+      <PageTemplate
+        pageTitle={workshopProps.pageTitle}
+        pageParagraph={workshopProps.pageParagraph}
+        mainImage={workshopProps.mainImage}
+        imageName={workshopProps.imageName}
+      />
+    </section>
+  );
 };
-
 export default Workshop;
