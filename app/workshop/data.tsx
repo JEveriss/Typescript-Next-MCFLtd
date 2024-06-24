@@ -1,4 +1,4 @@
-import WorkshopImage from "../assets/Images/workShop-01.jpeg";
+import WorkshopImage from "../assets/Images/WorkShop-01.jpeg";
 export const data = [
   {
     pageTitle: "Matthew's Team & Workshop",
