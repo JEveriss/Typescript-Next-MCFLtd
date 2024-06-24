@@ -1,12 +1,23 @@
-import styles from './pages.module.css'
+import styles from "../pages.module.css";
 
-import React from 'react'
+import PageTemplate from "../components/pageTemplate/pageTemplate";
 
-type Props = {}
+import {data} from "./data";
 
-const Clients = (props: Props) => {
+const clientsProps = data[0]
+
+const Clients = () => {
+
   return (
-    <div>Clients</div>
-  )
-}
-export default Clients
+    <section className={styles.page__Wrapper}>
+      <PageTemplate
+        pageTitle={clientsProps.pageTitle}
+        pageSubTitle={clientsProps.pageSubTitle}
+        pageParagraph={clientsProps.pageParagraph}
+        mainImage={clientsProps.mainImage}
+        imageName={clientsProps.imageName}
+      />
+    </section>
+  );
+};
+export default Clients;

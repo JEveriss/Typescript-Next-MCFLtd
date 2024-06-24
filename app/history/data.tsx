@@ -1,4 +1,4 @@
-import historyImage from "../assets/historyImages/history-01.jpeg";
+import historyImage from "../assets/Images/History-01.jpeg";
 export const data = [
   {
     pageTitle: "History",

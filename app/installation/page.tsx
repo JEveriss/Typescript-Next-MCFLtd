@@ -1,11 +1,22 @@
-import styles from "./pages.module.css";
+import styles from "../pages.module.css";
 
-import React from "react";
+import PageTemplate from "../components/pageTemplate/pageTemplate";
 
-type Props = {};
+import {data} from "./data";
 
-const Installation = (props: Props) => {
-  return <div>Installation</div>;
+const installationProps = data[0]
+
+const Installation = () => {
+
+  return (
+    <section className={styles.page__Wrapper}>
+      <PageTemplate
+        pageTitle={installationProps.pageTitle}
+        pageParagraph={installationProps.pageParagraph}
+        mainImage={installationProps.mainImage}
+        imageName={installationProps.imageName}
+      />
+    </section>
+  );
 };
-
 export default Installation;

@@ -4,6 +4,7 @@ import Image from "next/image";
 
 type PageProps = {
   pageTitle: string;
+  pageSubTitle?: string | undefined;
   pageParagraph: string[][];
   mainImage: string | StaticImport;
   imageName: string;
@@ -14,6 +15,12 @@ const PageTemplate = (props: PageProps) => {
     <section className={styles.page__Wrapper}>
       <div className={styles.page__LeftBlock}>
         <h2 className={styles.page__Title}>{props.pageTitle}</h2>
+        {props.pageSubTitle ? (
+          <h3 className={styles.page__SubTitle}>{props?.pageSubTitle}</h3>
+        ) : (
+          ""
+        )}
+
         {props.pageParagraph.map((text, i) => {
           return (
             <p key={i} className={styles.page__Paragraph}>

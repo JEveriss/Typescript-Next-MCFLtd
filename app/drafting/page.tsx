@@ -1,11 +1,23 @@
-import styles from "./pages.module.css";
+import styles from "../pages.module.css";
 
-import React from "react";
+import PageTemplate from "../components/pageTemplate/pageTemplate";
 
-type Props = {};
+import {data} from "./data";
 
-const Drafting = (props: Props) => {
-  return <div>Drafting</div>;
+const historyProps = data[0]
+
+const History = () => {
+
+  return (
+    <section className={styles.page__Wrapper}>
+      <PageTemplate
+        pageTitle={historyProps.pageTitle}
+        pageSubTitle={historyProps.pageSubTitle}
+        pageParagraph={historyProps.pageParagraph}
+        mainImage={historyProps.mainImage}
+        imageName={historyProps.imageName}
+      />
+    </section>
+  );
 };
-
-export default Drafting;
+export default History;
