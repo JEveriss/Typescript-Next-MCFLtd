@@ -45,4 +45,9 @@
   .page__RightBlock {
     width: 100%;
   }
+
+  .page__Title {
+    font-size: 3rem;
+    text-align: center;
+  }
 }
