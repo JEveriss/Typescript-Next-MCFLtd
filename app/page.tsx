@@ -1,3 +1,4 @@
+import BurgerMenu from "./components/burgerMenu/burgerMenu";
 import HeroBanner from "./components/heroBanner/heroBanner";
 import SwiperBanner from "./components/heroBanner/swiperbanner";
 import Navigation from "./components/navigation/navigation";
@@ -5,7 +6,7 @@ import Navigation from "./components/navigation/navigation";
 const Home = () => {
   return (
     <main>
-      <SwiperBanner/>
+      <SwiperBanner />
     </main>
   );
 };

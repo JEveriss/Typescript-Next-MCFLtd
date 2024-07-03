@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./navigation.module.css";
+import BurgerMenu from "../burgerMenu/burgerMenu";
 
 const links = [
   "history",
@@ -18,6 +21,7 @@ const Navigation = () => {
         <h2>MATTHEW</h2>
         <h2>COLLINS</h2>
       </a>
+      <BurgerMenu onClick={() => console.log("hello")} />
       <ul className={styles.navigation__ul}>
         {links.map((link, i) => {
           return (
