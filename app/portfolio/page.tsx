@@ -1,5 +1,5 @@
 import styles from "./pages.module.css";
-import HamburgerMenu from "../components/hamburgerMenu/hamburgerMenu";
+import BurgerMenu from "../components/burgerMenu/burgerMenu";
 
 import React from "react";
 
