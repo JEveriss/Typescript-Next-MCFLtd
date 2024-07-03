@@ -1,11 +1,6 @@
-import styles from "./pages.module.css";
-import BurgerMenu from "../components/burgerMenu/burgerMenu";
-
 import React from "react";
 
-type Props = { onClick: Function };
-
-const Portfolio = (props: Props) => {
+const Portfolio = () => {
   return <div>Portfolio</div>;
 };
 
