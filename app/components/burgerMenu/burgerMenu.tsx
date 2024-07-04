@@ -25,6 +25,7 @@ const links = [
 const BurgerMenu = (props: BurgerProps) => {
   const handleClick = () => {
     setIsOpen((prev) => !prev);
+   
     console.log(isOpen);
   };
 
@@ -47,7 +48,7 @@ const BurgerMenu = (props: BurgerProps) => {
           {links.map((link, i) => {
             return (
               <li className={styles.burger__Li} key={i}>
-                <Link href={"/"}>{link}</Link>
+                <Link onClick={() => setTimeout(handleClick, 400)} href={`${link.toLocaleLowerCase()}`}>{link}</Link>
               </li>
             );
           })}
