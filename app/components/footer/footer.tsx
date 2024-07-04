@@ -9,27 +9,50 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <section className={styles.footer__Wrapper}>
-      <div className={styles.footer__LeftBlock}>
-        <MailIcon />
-        <Link className={styles.footer__Link} href={"/"}>
-          <p className={styles.footer__text}>matt@mcfltd.com</p>
-        </Link>
-        <PhoneIcon />
-        <Link className={styles.footer__Link} href={"/"}>
-          <p className={styles.footer__text}>01865 883443</p>
-        </Link>
-      </div>
+      <span className={styles.footer__Top}>
+        <div className={styles.footer__Address}>
+          <p>Matthew Collins Furniture Ltd</p>
+          <p>Cotswold Dene</p>
+          <p>Oxfordshire</p>
+          <p>Standlake</p>
+          <p>OX29 7PL</p>
+        </div>
+        <div className={styles.footer__Contact}>
+          <div className={styles.footer__LeftBlock}>
+            <MailIcon />
+            <Link className={styles.footer__Link} href={"/"}>
+              <p className={styles.footer__text}>matt@mcfltd.com</p>
+            </Link>
+            <PhoneIcon />
+            <Link className={styles.footer__Link} href={"/"}>
+              <p className={styles.footer__text}>01865 883443</p>
+            </Link>
+          </div>
 
-      <div className={styles.footer__RightBlock}>
-        <Link href={"/facebook.com"}>
-          <FacebookIcon />
-        </Link>
-        <Link href={"instagram.com"}>
-          <InstagramIcon />
-        </Link>
-        <Link href={"twitter.com"}>
-          <TwitterIcon />
-        </Link>
+          <div className={styles.footer__RightBlock}>
+            <a href="https://www.facebook.com" target="blank" rel="noreferrer">
+              <FacebookIcon />
+            </a>
+            <a href="https://www.instagram.com/matthewcollinsfurniture/" target="blank" rel="noreferrer">
+              <InstagramIcon />
+            </a>
+            <a href="https://www.twitter.com" target="blank" rel="noreferrer">
+              <TwitterIcon />
+            </a>
+          </div>
+        </div>
+      </span>
+      <div className={styles.footer__Bottom}>
+        2024 © Matthew Collins Furniture
+        <br />
+        Website by{" "}
+        <a
+          href="https://www.jacques-everiss.com/"
+          target="blank"
+          rel="noreferrer"
+        >
+          Jacques Everiss
+        </a>{" "}
       </div>
     </section>
   );
