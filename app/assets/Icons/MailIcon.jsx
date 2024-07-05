@@ -1,9 +1,9 @@
 export default function MailIcon() {
   return (
     <svg
-      width="32"
-      height="20"
-      viewBox="0 0 40 30"
+      width="43"
+      height="30"
+      viewBox="0 0 43 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
