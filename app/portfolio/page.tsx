@@ -1,7 +1,8 @@
 import React from "react";
+import { Icon } from "../assets/Icon/icons";
 
 const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return <div><Icon name={'fb'}/></div>;
 };
 
 export default Portfolio;
