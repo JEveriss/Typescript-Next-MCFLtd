@@ -5,6 +5,16 @@ import MailIcon from "../../assets/Icons/MailIcon";
 import PhoneIcon from "../../assets/Icons/PhoneIcon";
 import TwitterIcon from "../../assets/Icons/TwitterIcon";
 import Link from "next/link";
+import { Icon } from "@/app/assets/Icon/icons";
+
+const COLOURS = {
+  "--primary-dark": "#16233d",
+  "--primary-light": "#ffffe0",
+  "--primary-accent": "#c7dff9",
+  "--primary-shade": "#00000042",
+};
+
+const links = ["Twitter", "Facebook", "Instagram"];
 
 const Footer = () => {
   return (
@@ -21,15 +31,23 @@ const Footer = () => {
       </div>
 
       <div className={styles.footer__RightBlock}>
-        <Link href={"/facebook.com"}>
-          <FacebookIcon />
-        </Link>
-        <Link href={"instagram.com"}>
-          <InstagramIcon />
-        </Link>
-        <Link href={"twitter.com"}>
-          <TwitterIcon />
-        </Link>
+        {links.map((link, i) => {
+          return (
+            <a
+              key={i}
+              href={`https://www.${link}.com`}
+              rel="noreferrer"
+              target="blank"
+            >
+              <Icon
+                height={40}
+                width={50}
+                name={link}
+                color={COLOURS["--primary-light"]}
+              />
+            </a>
+          );
+        })}
       </div>
     </section>
   );

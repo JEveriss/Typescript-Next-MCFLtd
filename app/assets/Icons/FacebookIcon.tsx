@@ -1,8 +1,14 @@
-export default function FacebookIcon() {
+export interface IconProps {
+  height: number,
+  width: number,
+  color?: string
+}
+
+export default function FacebookIcon(props: IconProps) {
   return (
     <svg
-      width="40"
-      height="40"
+      width={props.width}
+      height={props.height}
       viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +30,7 @@ export default function FacebookIcon() {
             fill-rule="evenodd"
             clipRule="evenodd"
             d="M32.5 0H7.5C3.3579 0 0 3.3579 0 7.5V32.5C0 36.6421 3.3579 40 7.5 40H32.5C36.6421 40 40 36.6421 40 32.5V7.5C40 3.3579 36.6421 0 32.5 0ZM31.4842 21.5421H27.7421V35.3947H21.4894V21.5421H19.0631V16.8737H21.4894V13.9C21.4894 10.0053 23.1106 7.68947 27.7 7.68947H32.3526V12.3369H29.6474C27.8579 12.3369 27.7421 13.0053 27.7421 14.2474L27.7369 16.8684H31.9894L31.479 21.5369L31.4842 21.5421Z"
-            fill="#FFFFE0"
+            fill={props.color ? props.color : "black"}
           />
         </g>
       </g>
