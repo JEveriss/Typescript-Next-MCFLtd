@@ -4,7 +4,7 @@ import { Icon } from "../components/Icon/icons";
 const Portfolio = () => {
   return (
     <div>
-      <Icon name={"fb"} />
+      <Icon name={"fb"} height={50} width={50} color="red" />
     </div>
   );
 };
