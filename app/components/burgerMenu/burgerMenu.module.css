@@ -58,7 +58,7 @@
 .burger__Li {
   transition: all 0.3s;
 }
-.burger__Li:hover + a  {
+.burger__Li:hover + a {
   transform: skew(-10deg);
 }
 .burger__Li > a {

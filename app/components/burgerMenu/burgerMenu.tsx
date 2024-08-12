@@ -25,8 +25,7 @@ const links = [
 const BurgerMenu = (props: BurgerProps) => {
   const handleClick = () => {
     setIsOpen((prev) => !prev);
-   
-    console.log(isOpen);
+  
   };
 
   const [isOpen, setIsOpen] = useState(false);
