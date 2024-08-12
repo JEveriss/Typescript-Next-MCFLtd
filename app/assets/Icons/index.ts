@@ -1,5 +1,0 @@
-export * from './InstagramIcon'
-export * from './MailIcon'
-export * from './PhoneIcon'
-export * from './TwitterIcon'
-export * from './FacebookIcon'

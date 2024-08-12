@@ -1,4 +1,4 @@
-import { Icon } from "./assets/Icon/icons";
+import { Icon } from "./components/Icon/icons";
 import BurgerMenu from "./components/burgerMenu/burgerMenu";
 import HeroBanner from "./components/heroBanner/heroBanner";
 import SwiperBanner from "./components/heroBanner/swiperbanner";

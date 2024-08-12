@@ -1,11 +1,5 @@
 import styles from "./footer.module.css";
-import FacebookIcon from "../../assets/Icons/FacebookIcon";
-import InstagramIcon from "../../assets/Icons/InstagramIcon";
-import MailIcon from "../../assets/Icons/MailIcon";
-import PhoneIcon from "../../assets/Icons/PhoneIcon";
-import TwitterIcon from "../../assets/Icons/TwitterIcon";
-import Link from "next/link";
-import { Icon } from "@/app/assets/Icon/icons";
+import { Icon } from "@/app/components/Icon/icons";
 
 const COLOURS = {
   "--primary-dark": "#16233d",
@@ -16,18 +10,28 @@ const COLOURS = {
 
 const links = ["Twitter", "Facebook", "Instagram"];
 
+const contacts = [
+  { name: "Phone", link: "01865 883443", height: 35, width: 40 },
+  { name: "Mail", link: "Matt@MCFltd.com", height: 28, width: 40 },
+];
+
 const Footer = () => {
   return (
     <section className={styles.footer__Wrapper}>
       <div className={styles.footer__LeftBlock}>
-        <MailIcon />
-        <Link className={styles.footer__Link} href={"/"}>
-          <p className={styles.footer__text}>matt@mcfltd.com</p>
-        </Link>
-        <PhoneIcon />
-        <Link className={styles.footer__Link} href={"/"}>
-          <p className={styles.footer__text}>01865 883443</p>
-        </Link>
+        {contacts.map((contact, i) => {
+          return (
+            <a key={i} className={styles.footer__Link} href={contact.link}>
+              <Icon
+                name={contact.name}
+                color={COLOURS["--primary-light"]}
+                height={contact.height}
+                width={contact.width}
+              />
+              <p className={styles.footer__text}>{contact.link}</p>
+            </a>
+          );
+        })}
       </div>
 
       <div className={styles.footer__RightBlock}>
@@ -41,7 +45,7 @@ const Footer = () => {
             >
               <Icon
                 height={40}
-                width={50}
+                width={40}
                 name={link}
                 color={COLOURS["--primary-light"]}
               />
