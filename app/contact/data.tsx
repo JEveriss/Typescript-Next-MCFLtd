@@ -8,9 +8,13 @@ export const data = [
       ["Standlake"],
       ["Oxfordshire"],
       ["OX29 7PL"],
+    ],
+    pageContact: [
       ["Telephone: "],
       ["01865 883443 / 01865 300002"],
-      ["Open to the public Monday - Friday 8am until 5pm"],
+      ["Email: "],
+      ["Matt@MCFltf.com"],
+      ["Open to the public Monday - Friday 8am until 5pm"]
     ],
     mainImage: contactImage,
     imageName: "Contact Image",
