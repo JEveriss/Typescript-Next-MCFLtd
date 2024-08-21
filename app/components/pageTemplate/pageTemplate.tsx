@@ -5,11 +5,11 @@ import { CSSProperties } from "react";
 
 type PageProps = {
   pageTitle: string;
-  pageSubTitle?: string | undefined;
+  pageSubTitle?: string;
   pageParagraph: string[][];
-  pageContact?: string[][] | undefined;
-  mainImage: string | StaticImport;
-  imageName: string;
+  pageContact?: string[][];
+  mainImage?: string | StaticImport;
+  imageName?: string;
   children?: React.ReactNode;
 };
 
@@ -50,14 +50,17 @@ const PageTemplate = (props: PageProps) => {
         )}
         <span>{props?.children}</span>
       </div>
-
-      <div className={styles.page__RightBlock}>
-        <Image
-          className={styles.page__Image}
-          src={props?.mainImage}
-          alt={props?.imageName}
-        />
-      </div>
+      {props.mainImage && props.imageName ? (
+        <div className={styles.page__RightBlock}>
+          <Image
+            className={styles.page__Image}
+            src={props?.mainImage}
+            alt={props?.imageName}
+          />
+        </div>
+      ) : (
+        ""
+      )}
     </section>
   );
 };
