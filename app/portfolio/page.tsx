@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import PageTemplate from "../components/pageTemplate/pageTemplate";
 import { data } from "./data";
@@ -9,14 +9,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import Modal from "../login/page"
 
 const portfolioProps = data;
 
 const Portfolio = () => {
-  console.log("PROPS: ", portfolioProps.imageList);
-  {
-    portfolioProps;
-  }
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <section className={styles.portfolio__Wrapper}>
       <h2 className={styles.portfolio__Title}>Portfolio</h2>
@@ -35,24 +34,9 @@ const Portfolio = () => {
           );
         })}
       </ul>
-
-      <div style={{height: '400px'}}>
-        <Swiper navigation={true} modules={[Navigation]}>
-          {portfolioProps.imageList.map((thumbnail, i) => {
-            return (
-              <SwiperSlide className={styles.portfolio__GalleryItem} key={i}>
-                <Image
-                  className={styles.portfolio__Thumbnail}
-                  alt="alt"
-                  src={thumbnail.src}
-                  width="100"
-                  height="100"
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </div>
+      {/* MODAL */}
+      {/* <Modal /> */}
+<Modal/>
     </section>
   );
 };

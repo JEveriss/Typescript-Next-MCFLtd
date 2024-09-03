@@ -1,0 +1,7 @@
+.swiper-button-next:after {
+    color: red;
+  }
+
+  swiper {
+    --swiper-navigation-color: red
+}

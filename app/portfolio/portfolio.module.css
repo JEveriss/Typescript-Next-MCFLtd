@@ -26,12 +26,21 @@
   grid-row: span 3;
 }
 
-.gallery > .gallery__list > li > figure {
+/* .gallery > .gallery__list > li > figure {
   height: 100%;
-}
+} */
 
 .portfolio__Thumbnail {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+.portfolio__Swiper {
+  height: 400px;
+}
+.portfolio__SwiperItem {
+  object-fit: contain;
+}
+
+
