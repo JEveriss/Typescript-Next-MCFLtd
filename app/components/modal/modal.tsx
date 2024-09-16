@@ -14,13 +14,13 @@ export default function Modal(props: ModalProps) {
       }`}
     >
       <div className={styles.modal__Main}>
-        <div className={styles.modal__Head}>
-
-          <button type="button" className={styles.modal__Button} onClick={props.onClose}>
-            X
-          </button>
-        </div>
-
+        <button
+          type="button"
+          className={styles.modal__Button}
+          onClick={props.onClose}
+        >
+          xXx
+        </button>
         <div className={styles.modal__Body}>{props.children}</div>
       </div>
     </div>

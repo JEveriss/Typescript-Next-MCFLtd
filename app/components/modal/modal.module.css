@@ -41,8 +41,5 @@
 .modal__Button {
   border-radius: 50%;
   font-size: 3rem;
-}
-
-.btn {
   cursor: pointer;
 }
